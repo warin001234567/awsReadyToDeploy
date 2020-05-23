@@ -1,0 +1,26 @@
+version: "2"
+services:
+  app:
+    container_name: app
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+      - dependencies:/usr/src/app/node_modules
+    working_dir: /usr/src/app
+    environment:
+      NODE_ENV: development
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27018:27017"
+    # command: mongod --port 27017 --bind_ip_all
+volumes:
+  dependencies:

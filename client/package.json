@@ -1,0 +1,27 @@
+{
+  "name": "webpro-front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "head": "^1.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "link": "^0.1.5",
+    "next": "9.4.2",
+    "react": "16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "^6.0.0",
+    "reactstrap": "^8.4.1",
+    "save": "^2.4.0",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {}
+}
